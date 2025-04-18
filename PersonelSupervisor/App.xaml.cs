@@ -1,21 +1,18 @@
-﻿using System.Configuration;
+﻿using SQLitePCL;
+using System.Configuration;
 using System.Data;
 using System.Windows;
+using System;
 
-namespace PersonelSupervisor;
-
-/// <summary>
-/// Interaction logic for App.xaml
-/// </summary>
-public partial class App : Application
+namespace PersonelSupervisor.App
 {
-    protected override void OnStartup(StartupEventArgs e)
+    public partial class App : Application
     {
-        base.OnStartup(e);
-
-        // Veritabanı başlat
-        DatabaseHelper.InitializeDatabase();
+        // Uygulama başlatıldığında yapılacak işlemler buraya eklenebilir.
+        protected override void OnStartup(StartupEventArgs e)
+        {
+            base.OnStartup(e);
+            // Burada başlangıç işlemleri yapılabilir (örneğin, kullanıcı doğrulama vb.)
+        }
     }
 }
-
-

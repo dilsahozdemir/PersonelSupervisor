@@ -10,12 +10,11 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Data.Sqlite.Core" Version="9.0.4" />
+    <PackageReference Include="SQLitePCLRaw.bundle_e_sqlite3" Version="2.1.11" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Models\" />
     <Folder Include="Helpers\" />
-    <Folder Include="Services\" />
     <Folder Include="ViewsModels\" />
     <Folder Include="Views\" />
   </ItemGroup>
